@@ -18,6 +18,8 @@ export const Form = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 60px;
 `;
 
 
@@ -29,7 +31,20 @@ export const Button = styled.button`
     cursor: pointer;
     font-size: 16px;
     margin-top: 16px;
-    width: 100%;
+    width: 12%;
     padding: 4px;
     color: #fff;
+`;
+
+export const Head = styled.head`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    
+    h1{
+        color: #a00;
+        margin: 8px;
+    }
 `;
