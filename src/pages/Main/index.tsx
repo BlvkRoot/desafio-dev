@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Container, Form } from "../../styles";
+import { Container } from "../../styles";
 
 function Main() {
     return (
@@ -7,6 +6,5 @@ function Main() {
         </Container>
     )
 }
-
 
 export default Main
