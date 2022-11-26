@@ -1,3 +1,4 @@
+import React from 'react'
 import GlobalStyle from './assets/global'
 import Router from "./routes"
 
