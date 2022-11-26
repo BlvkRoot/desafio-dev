@@ -4,6 +4,7 @@ import { Container } from "../../styles";
 function Main() {
     return (
         <Container>
+            <p>This is home</p>
         </Container>
     )
 }

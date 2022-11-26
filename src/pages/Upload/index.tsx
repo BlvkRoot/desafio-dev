@@ -6,7 +6,7 @@ export default function Upload() {
         <Form onSubmit={() => { }}>
             <input type="file" accept=".txt" />
 
-            <Button>
+            <Button data-testid='upload-button'>
                 Enviar
             </Button>
         </Form>
