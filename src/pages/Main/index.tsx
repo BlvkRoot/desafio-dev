@@ -48,7 +48,7 @@ function Main() {
                             transactionsData[0]?.transactions.map(data => (
                                 <tr key={data.id}>
                                     <td>{data.transactionType}</td>
-                                    <td>{`${data.transactionOccurrenceDate.slice(0, 4)}/${data.transactionOccurrenceDate.slice(4, 6)}/${data.transactionOccurrenceDate.slice(6,8)}`}</td>
+                                    <td>{`${data.transactionOccurrenceDate.slice(0, 4)}/${data.transactionOccurrenceDate.slice(4, 6)}/${data.transactionOccurrenceDate.slice(6, 8)}`}</td>
                                     <td>{data.transactionValue}</td>
                                     <td>{data.transactionCPF}</td>
                                     <td>{data.transactionCard}</td>
@@ -61,6 +61,11 @@ function Main() {
                                 </tr>
                             ))
                         }
+                        <tr>
+                            <td colSpan={8}>Total de saldo: {
+                                transactionsData[0]?.transactions.reduce((curr, acc, i) => curr + Number(acc.transactionValue),0)
+                            }</td>
+                        </tr>
                     </tbody>
                 </TABLE>
             </div>
