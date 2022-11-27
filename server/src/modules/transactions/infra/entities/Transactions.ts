@@ -14,7 +14,7 @@ export class Transactions {
     @Column({
         type: 'decimal'
     })
-    transactionValue: number;
+    transactionValue: string;
 
     @Column()
     transactionCPF: string;
@@ -32,8 +32,6 @@ export class Transactions {
     transactionStoreName: string;
  
     constructor() {
-        if(!this.id) {
-            this.id = crypto.randomUUID()
-        }
+        if(!this.id) this.id = crypto.randomUUID()
     }
 }

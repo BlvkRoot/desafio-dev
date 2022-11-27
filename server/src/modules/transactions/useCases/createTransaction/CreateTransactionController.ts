@@ -5,7 +5,8 @@ export class CreateTransactionController {
     constructor(private readonly createTransaction: ICreateTransactionUseCase) { };
     public async handle(request: Request, response: Response): Promise<Response> {
         try {
-            await this.createTransaction.execute({ path: request.file?.path });
+            const data = await this.createTransaction.execute({ path: request.file?.path });
+            console.log('data::: ', data);
             return response.json({
                 message: "Transactions created successfully",
                 success: true,

@@ -9,7 +9,7 @@ const upload = multer(uploadConfig);
 
 route.get('/', (req: Request, res: Response) => {
     return res.json({
-        message: "Welcome to CNAB APIiii!",
+        message: "Welcome to CNAB API!",
         success: true,
     });
 });

@@ -2,7 +2,7 @@
 export interface ICreateTransactionsDTO {
     transactionType: string;
     transactionOccurrenceDate: string;
-    transactionValue: number;
+    transactionValue: string;
     transactionCPF: string;
     transactionCard: string;
     transactionTime: string;

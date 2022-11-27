@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container, TABLE } from "../../styles";
-import { getDate, formatISO9075 } from 'date-fns'
+import { formatISO9075 } from 'date-fns'
 interface ITransactions {
     transactions: {
         id: string;
