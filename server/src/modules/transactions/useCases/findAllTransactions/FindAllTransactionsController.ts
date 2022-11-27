@@ -7,7 +7,7 @@ export class FindAllTransactionsController {
         const transactions = await this.findAllTransactions.execute();
         return response.json({
             success: true,
-            data: transactions
+            transactions
         });
     }
 }

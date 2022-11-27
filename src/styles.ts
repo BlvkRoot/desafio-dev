@@ -81,3 +81,43 @@ export const Nav = styled.nav`
       transition: 0.5s ease-in-out;
     }
 `;
+
+export const TABLE = styled.table`
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    display: block;
+    height: 500px;
+    overflow: auto;
+    padding: 20px;
+    position relative;
+    border-collapse: collapse;
+
+    thead{
+      background-color: white;
+      position: sticky;
+      top: 0;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px !important;                                                                               
+      tr:nth-child(2){
+        th{
+          padding: 10px;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          padding: 10px;
+          text-align: center;
+          font-weight: bold;
+          border: 2px solid grey;
+          border-radius: 2px;
+          border-style: dashed;
+          opacity: 0.5;
+        }
+      }
+    }
+`;

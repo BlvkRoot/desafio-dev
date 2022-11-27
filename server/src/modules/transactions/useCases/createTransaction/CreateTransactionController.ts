@@ -14,7 +14,6 @@ export class CreateTransactionController {
             return response.json({
                 message,
                 success: false,
-                data: []
             });
         }
     }
