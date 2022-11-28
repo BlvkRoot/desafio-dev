@@ -63,6 +63,7 @@ GET /transactions
 # TECNOLOGIAS USADAS
 
 :arrow_forward: NODEJS + EXPRESS + TYPESCRIPT + TYPEORM + POSTGRES + DOCKER + DOCKER COMPOSE + INSOMNIA
+<br>
 :arrow_forward: REACTJS + VITE + TYPESCRIPT + VITEST
 
 <center>Desenvolvido por Henriques Salucamba :purple_heart:</center>
