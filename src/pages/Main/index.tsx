@@ -30,7 +30,9 @@ function Main() {
                 <TABLE>
                     <thead>
                         <tr>
-                            <th colSpan={8}>Lista de Transações</th>
+                            <th colSpan={8}>Lista de Transações com Total de saldo: {
+                                transactionsData[0]?.transactions.reduce((acc, curr) => acc + Number(curr.transactionValue),0)
+                            }</th>
                         </tr>
                         <tr>
                             <th>Tipo</th>
@@ -61,11 +63,6 @@ function Main() {
                                 </tr>
                             ))
                         }
-                        <tr>
-                            <td colSpan={8}>Total de saldo: {
-                                transactionsData[0]?.transactions.reduce((curr, acc, i) => curr + Number(acc.transactionValue),0)
-                            }</td>
-                        </tr>
                     </tbody>
                 </TABLE>
             </div>

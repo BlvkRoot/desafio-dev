@@ -5,15 +5,15 @@ export class CreateTransactionController {
     constructor(private readonly createTransaction: ICreateTransactionUseCase) { };
     public async handle(request: Request, response: Response): Promise<Response> {
         try {
-            const data = await this.createTransaction.execute({ path: request.file?.path });
-            console.log('data::: ', data);
-            return response.json({
+            await this.createTransaction.execute({ path: request.file?.path });
+            return response.status(201).json({
                 message: "Transactions created successfully",
                 success: true,
             });
-        } catch ({ message }) {
-            return response.json({
-                message,
+        } catch (error) {
+            console.log(error);
+            return response.status(400).json({
+                error,
                 success: false,
             });
         }

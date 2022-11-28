@@ -19,4 +19,5 @@ export default {
       return callback(null, fileName);
     },
   }),
+  currDir: resolve(__dirname, '..', '..')
 };
