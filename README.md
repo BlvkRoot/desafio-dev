@@ -3,7 +3,7 @@
 ```
 1 - Ter o Docker configurado na sua máquina
 
-2 - Depois de certificar que o Docker está configurado e rodando, vamos copiar o ficheiro **.env.example** \n isso dentro da pasta **/server/.env.example**, alterar o nome para **.env**
+2 - Depois de certificar que o Docker está configurado e rodando, vamos copiar o ficheiro **.env.example** isso dentro da pasta **/server/.env.example**, alterar o nome para **.env**
 
 3 - Depois de copiar o ficheiro **.env.example** e alterar o nome para **.env**, deve setar as variaveis de ambiente: 
     DB_NAME=desafio-dev-db
