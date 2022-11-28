@@ -66,4 +66,4 @@ GET /transactions
 <br>
 :arrow_forward: REACTJS + VITE + TYPESCRIPT + VITEST
 
-<center>Desenvolvido por Henriques Salucamba :purple_heart:</center>
+<h1 align="center">Desenvolvido por Henriques Salucamba :purple_heart:</h1>
